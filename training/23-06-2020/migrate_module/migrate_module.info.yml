@@ -1,0 +1,8 @@
+name: Migrate module
+description: 'Module to access or update configuration.'
+type: module    
+package: custom
+version: '8.x-1.2'
+core: '8.x'
+project: 'Migrate Module'
+
