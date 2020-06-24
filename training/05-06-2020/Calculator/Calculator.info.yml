@@ -1,0 +1,11 @@
+name:  Calculator
+description: 'Module to access or update configuration.'
+type: module    
+package: custom
+# core: '8.x'
+# configure: Calculator.configuration
+
+version: '8.x-1.2'
+core: '8.x'
+project: 'Calculator'
+

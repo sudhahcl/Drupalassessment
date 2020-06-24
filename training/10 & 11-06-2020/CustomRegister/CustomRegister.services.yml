@@ -1,0 +1,4 @@
+services:
+  CustomRegister.register:
+    class: 'Drupal\CustomRegister\Services\CustomRegister'
+    arguments: ['@config.factory']

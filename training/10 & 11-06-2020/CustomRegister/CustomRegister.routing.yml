@@ -1,0 +1,15 @@
+CustomRegister.config_example_add:
+  path: /register
+  defaults:
+    _form: 'Drupal\CustomRegister\Form\CustomRegisterForm'
+    _title: 'Custom Register Configuration'
+  requirements:
+    _permission: 'access content'
+
+CustomRegister.config_example_add1:
+  path: /register/{custom_id}/edit
+  defaults:
+    _form: 'Drupal\CustomRegister\Form\CustomRegisterForm_edit'
+    _title: 'Custom Register Configuration'
+  requirements:
+    _permission: 'access content'

@@ -1,0 +1,6 @@
+Dynamicuser.display:
+  path: '/display/{user}'
+  defaults:
+    _controller: '\Drupal\Dynamicuser\Controller\displayController::display'
+  requirements:
+    _role: 'administrator'  

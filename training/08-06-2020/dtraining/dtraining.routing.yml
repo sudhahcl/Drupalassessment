@@ -1,0 +1,7 @@
+dtraining.config_example_add:
+  path: /dtraining_config
+  defaults:
+    _form: 'Drupal\dtraining\Form\dtrainingSetting'
+    _title: 'Training Custom Configuration'
+  requirements:
+    _permission: 'access content'

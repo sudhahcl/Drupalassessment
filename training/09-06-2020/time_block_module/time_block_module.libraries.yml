@@ -1,0 +1,9 @@
+time_block_module_scripts:
+  header: false
+  js:
+    js/displaytimeblock.js: {}
+  css:
+    theme:
+      css/displaytimeblock.css: {}
+  dependencies:
+    - core/jquery 

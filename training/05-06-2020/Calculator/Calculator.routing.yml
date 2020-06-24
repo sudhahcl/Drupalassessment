@@ -1,0 +1,14 @@
+Calculator.config_example_add:
+  path: /calculator
+  defaults:
+    _controller: 'Drupal\Calculator\Controller\CalculatorController::calFunc'
+    _title: 'Custom Calculation'
+  requirements:
+    _permission: 'access content'
+Calculator.config_example_add1:
+  path: /area_calculator
+  defaults:
+    _controller: 'Drupal\Calculator\Controller\areaCalculator::areaCal'
+    _title: 'Area Calculation'
+  requirements:
+    _permission: 'access content'

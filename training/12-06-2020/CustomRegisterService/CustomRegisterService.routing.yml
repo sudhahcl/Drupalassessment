@@ -1,0 +1,16 @@
+CustomRegisterService.config_example_add:
+  path: /custom_reg
+  defaults:
+    _form: 'Drupal\CustomRegisterService\Form\CustomRegisterServiceForm'
+    _title: 'Custom Service Configuration'
+  requirements:
+    _permission: 'access content'
+
+
+CustomRegisterService.config_example_view:
+  path: /view_details
+  defaults:
+    _form: 'Drupal\CustomRegisterService\Form\CustomRegisterServicesView'
+    _title: 'User Details'
+  requirements:
+    _permission: 'access content'
