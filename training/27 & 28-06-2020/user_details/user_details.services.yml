@@ -1,0 +1,5 @@
+services:
+  user_details.custevent_subcriber:
+    class: Drupal\user_details\EventSubscriber\UserDetailEventSubscriber
+    tags:
+      - { name: 'event_subscriber' }

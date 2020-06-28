@@ -1,0 +1,8 @@
+name: User Details module
+description: 'Module to access.'
+type: module    
+package: custom
+version: '8.x-1.2'
+core: '8.x'
+project: 'User Details Module'
+

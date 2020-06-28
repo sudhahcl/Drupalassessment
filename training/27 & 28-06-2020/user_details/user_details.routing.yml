@@ -1,0 +1,7 @@
+user_details.form:
+  path: '/user_detail'
+  defaults:
+    _title: 'User Details'
+    _form: '\Drupal\user_details\Form\user_detailsForm'
+  requirements:
+    _permission: 'access content'
