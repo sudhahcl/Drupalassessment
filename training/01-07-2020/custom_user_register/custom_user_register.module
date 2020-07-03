@@ -1,0 +1,50 @@
+<?php
+
+/**
+ * @file
+ * Contains custom_user_register.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+use Drupal\Core\Messenger\MessengerInterface;
+use Symfony\Component\HttpFoundation\RedirectResponse;
+
+
+
+use Drupal\Core\Entity\EntityInterface;
+/**
+ * Implements hook_help().
+ */
+function custom_user_register_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the custom_user_register module.
+    case 'help.page.custom_user_register':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('My Awesome Module') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+function custom_user_register_user_insert($account){ 
+ 
+  drupal_set_message('Your account is registered our admin team will look & activate your account');  
+
+
+   }
+function custom_user_register_user_login($account){ 
+ 
+    $role = $account->getRoles();
+    if(in_array('administrator',$role)){
+      $response = new RedirectResponse('web/custom_user_register_list');
+      $response->send();
+    }
+    else{
+      $response = new RedirectResponse('custom_user_profile_form');
+      $response->send();
+
+    }
+
+   }

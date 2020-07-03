@@ -1,0 +1,5 @@
+services:
+  custom_user_register.custevent_subcriber:
+    class: Drupal\custom_user_register\EventSubscriber\UserDetailEventSubscriber
+    tags:
+      - { name: 'event_subscriber' }

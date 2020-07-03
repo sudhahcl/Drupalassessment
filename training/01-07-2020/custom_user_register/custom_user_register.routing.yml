@@ -1,0 +1,23 @@
+custom_user_register.userlist:
+  path: '/custom_user_register_list'
+  defaults:
+    _title: 'User List'
+    _form: '\Drupal\custom_user_register\Form\CustomUserRegisterList'
+  requirements:
+    _role: 'administrator'
+
+custom_user_register.userform:
+  path: '/custom_user_profile_form'
+  defaults:
+    _title: 'User Form'
+    _form: '\Drupal\custom_user_register\Form\CustomUserProfileForm'
+  requirements:
+    _role: 'user'
+
+custom_user_register.userformprofile:
+  path: '/custom_user_profile_form_list/{uid}'
+  defaults:
+    _title: 'User List'
+    _form: '\Drupal\custom_user_register\Form\CustomUserProfileFormList'
+  requirements:
+    _role: 'user'
